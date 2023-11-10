@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "14.0.2",
+    "autoprefixer": "^9",
     "eslint": "8.53.0",
     "eslint-config-next": "14.0.2",
     "next": "14.0.2",
+    "postcss": "^7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
