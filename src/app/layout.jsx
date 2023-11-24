@@ -6,6 +6,8 @@ import './globals.css'
 
 import { ThemeSwitcher } from '@/components/button'
 import { ThemeProvider } from './theme-provider'
+import NavBar from '@/components/NavBar'
+
 // import { ThemeProvider } from './Providers'
 
 export default function RootLayout({ children }) {
@@ -21,14 +23,12 @@ export default function RootLayout({ children }) {
 
        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <Header/>
-          <ThemeSwitcher />
+      <NavBar/>
+          {/* <ThemeSwitcher /> */}
           {children}
         </ThemeProvider> 
 
-        {/* <Providers>
-        <Header/>
-        {children}
-        </Providers> */}
+       
       </body>
     </html>
   )
