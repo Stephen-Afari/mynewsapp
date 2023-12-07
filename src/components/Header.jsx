@@ -4,6 +4,8 @@ import {AiOutlineHome} from 'react-icons/ai'
 import { BsInfoSquare } from "react-icons/bs";
 import Link from 'next/link';
 import DarkModeSwitch from './DarkModeSwitch';
+import { GiNewspaper } from "react-icons/gi";
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -25,7 +27,8 @@ export default function Header() {
       <div className=''>
         <DarkModeSwitch/>
        </div>
-      <div className="text-blue-300 my-3">logo</div>
+       <GiNewspaper className='hover:text-blue-200' size={40}/>
+      
       </div>
         
 

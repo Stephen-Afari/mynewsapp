@@ -6,6 +6,7 @@ import Image from 'next/image'
 // const inter = Inter({ subsets: ['latin'] })
 const API_KEY=process.env.API_KEY
 import Results from '@/components/Results';
+
 export default async function Home({searchParams}) {
   const genre = searchParams.genre || "fetchLastestNews";
   const res = await fetch( `https://newsapi.org/v2/${genre ==='fetchLastestNews'? "top-headlines": "everything"}?sources=bbc-news&apiKey=${API_KEY}`,
@@ -15,7 +16,7 @@ export default async function Home({searchParams}) {
   const data = await res.json();
   const results = data.articles
 
-  console.log(results)
+  // console.log(results)
   if(!res.ok){
     throw new Error("Failed to fetch data");
   }

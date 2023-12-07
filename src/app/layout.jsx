@@ -7,6 +7,7 @@ import './globals.css'
 import { ThemeSwitcher } from '@/components/button'
 import { ThemeProvider } from './theme-provider'
 import NavBar from '@/components/NavBar'
+import SearchBox from '@/components/SearchBox'
 
 // import { ThemeProvider } from './Providers'
 
@@ -25,7 +26,10 @@ export default function RootLayout({ children }) {
       <Header/>
       <NavBar/>
           {/* <ThemeSwitcher /> */}
+        {/* //Add search Box */}
+        <SearchBox/>
           {children}
+
         </ThemeProvider> 
 
        
