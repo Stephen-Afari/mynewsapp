@@ -16,7 +16,7 @@ export default function Header() {
         </div>
         <div>
           <Link href="/">
-          <h2 className=' bg-blue-100 sm:text-2xl font-bold py-1 px-2 rounded-lg my-4 dark:bg-blue-200'>
+          <h2 className=' bg-blue-100 sm:text-2xl font-bold py-1 px-2 rounded-lg my-4 dark:bg-gray-200'>
             <span className='mr-1'>Auth</span>
             <span>News</span>
           </h2>
